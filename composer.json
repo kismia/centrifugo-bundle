@@ -1,0 +1,24 @@
+{
+  "name": "kismia/centrifugo-bundle",
+  "type": "symfony-bundle",
+  "description": "A Centrifugo bundle for Symfony",
+  "keywords": ["centrifugo", "php", "symfony", "bundle"],
+  "homepage": "https://github.com/kismia/centrifugo-bundle",
+  "license": "MIT",
+  "authors": [{
+    "name": "Volodymyr Shevchenko",
+    "email": "volodymyr.shevchenko@corp.kismia.com"
+  }],
+  "require": {
+    "php": ">=7.0",
+    "symfony/framework-bundle": "^2.7 || ^3.0 || ^4.0",
+    "symfony/yaml": "^2.7 || ^3.0 || ^4.0",
+    "oleh-ozimok/php-centrifugo": "1.0.3"
+  },
+  "require-dev": {
+    "symfony/console": "^2.7 || ^3.0 || ^4.0"
+  },
+  "autoload": {
+    "psr-4": { "Kismia\\CentrifugoBundle\\": "" }
+  }
+}
