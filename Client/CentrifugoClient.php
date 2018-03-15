@@ -3,7 +3,10 @@
 namespace Kismia\CentrifugoBundle\Client;
 
 
-class CentrifugoClient
+use Centrifugo\Centrifugo;
+
+class CentrifugoClient extends Centrifugo
 {
 
 }
+
