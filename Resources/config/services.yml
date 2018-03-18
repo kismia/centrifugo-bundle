@@ -1,0 +1,6 @@
+imports:
+    - { resource: parameters.yml }
+services:
+    centrifugo.client:
+        class: Kismia\CentrifugoBundle\Client\CentrifugoClient
+        arguments: ["%apiendpoint%", "%secret%", "%transport%"]

@@ -1,0 +1,12 @@
+# This file is auto-generated during the composer install
+
+parameters:
+    apiendpoint: 'http//jfjfjf'
+    secret: 'wefwefw'
+    transport:
+        redis:
+            host: 'centrifugo-redis'
+            shards: 6
+            db: 2
+            timeout: 0.3
+            port: 6379
