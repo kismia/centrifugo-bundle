@@ -37,7 +37,7 @@ centrifugo:
         http: []
 ```
 
-##Basic usage
+## Basic usage
 
 ```php
 <?php
