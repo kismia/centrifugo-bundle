@@ -12,12 +12,12 @@
   }],
   "require": {
     "php": ">=7.0",
-    "symfony/framework-bundle": "^2.7 || ^3.0 || ^4.0",
-    "symfony/yaml": "^2.7 || ^3.0 || ^4.0",
+    "symfony/framework-bundle": "^3.0 || ^4.0",
+    "symfony/yaml": "^3.0 || ^4.0",
     "oleh-ozimok/php-centrifugo": "1.0.3"
   },
   "require-dev": {
-    "symfony/console": "^2.7 || ^3.0 || ^4.0"
+    "symfony/console": "^3.0 || ^4.0"
   },
   "autoload": {
     "psr-4": { "Kismia\\CentrifugoBundle\\": "" }
