@@ -1,12 +1,12 @@
 # This file is auto-generated during the composer install
 
 parameters:
-    apiendpoint: 'http//jfjfjf'
-    secret: 'wefwefw'
-    transport:
+     centrifugo.apiendpoint: 'http//localhost:8080'
+     centrifugo.secret: ''
+     centrifugo.transport:
         redis:
-            host: 'centrifugo-redis'
-            shards: 6
-            db: 2
-            timeout: 0.3
-            port: 6379
+          host: 'localhost'
+          shards: 6
+          db: 2
+          timeout: 0.3
+          port: 6379

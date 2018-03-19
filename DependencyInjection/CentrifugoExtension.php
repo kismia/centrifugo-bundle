@@ -30,10 +30,9 @@ class CentrifugoExtension extends Extension
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
 
-        //$defiantion = new Definition(CentrifugoClient::class, [$config['apiendpoint'], $config['secret'], $config['transport']]);
-        //$defiantion->setSynthetic(true);
-
-        //$container->setDefinition('centrifugo_client', $defiantion);
+        $container->setParameter('centrifugo.apiendpoint', $config['apiendpoint']);
+        $container->setParameter('centrifugo.secret', $config['secret']);
+        $container->setParameter('centrifugo.transport', $config['transport']);
 
     }
 

@@ -3,4 +3,4 @@ imports:
 services:
     centrifugo.client:
         class: Kismia\CentrifugoBundle\Client\CentrifugoClient
-        arguments: ["%apiendpoint%", "%secret%", "%transport%"]
+        arguments: ["%centrifugo.apiendpoint%", "%centrifugo.secret%", "%centrifugo.transport%"]
