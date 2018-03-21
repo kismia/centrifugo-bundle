@@ -1,0 +1,10 @@
+centrifugo:
+     apiendpoint: 'http//localhost:8080'
+     secret: ''
+     transport:
+        redis:
+          host: 'localhost'
+          shards: 6
+          db: 2
+          timeout: 0.3
+          port: 6379

@@ -1,36 +1,25 @@
 <?php
 
-namespace Kismia\CentrifugoBundle\Tests\DependencyInjection;
+namespace Kismia\CentrifugoBundle\Tests\Client;
 
 use Kismia\CentrifugoBundle\DependencyInjection\CentrifugoExtension;
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Yaml\Yaml;
 
-
-class CentrifugoExtensionTest extends TestCase
+class CentrifugoClientTest extends TestCase
 {
-
-    public function testLoad()
+    public function testClient()
     {
+       $config = Yaml::parseFile(__DIR__.'/../Fixtures/config.yaml');
 
-        $config = Yaml::parseFile(__DIR__.'/../Fixtures/config.yaml');
+       $container = $this->getContainer($config);
 
+       $client = $container->get('centrifugo.client');
 
-        $container = $this->getContainer($config);
-        $this->assertTrue($container->hasDefinition('centrifugo.client'));
-
-        $defination = $container->getDefinition('centrifugo.client');
-        $arguments = $defination->getArguments();
-
-
-        $this->assertEquals('%centrifugo.apiendpoint%', $arguments[0]);
-        $this->assertEquals('%centrifugo.secret%', $arguments[1]);
-        $this->assertEquals('%centrifugo.transport%', $arguments[2]);
+       $this->assertEquals('Kismia\CentrifugoBundle\Client\CentrifugoClient', get_class($client));
 
     }
-
 
     protected function getContainer(array $config = array(), array $thirdPartyDefinitions = array())
     {
