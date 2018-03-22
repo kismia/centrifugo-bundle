@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: vladimir
- * Date: 15.03.18
- * Time: 13:28
- */
 
 namespace Kismia\CentrifugoBundle\DependencyInjection\Configuration;
-
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

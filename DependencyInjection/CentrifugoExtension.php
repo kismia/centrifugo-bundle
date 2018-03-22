@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: vladimir
- * Date: 15.03.18
- * Time: 14:43
- */
 
 namespace Kismia\CentrifugoBundle\DependencyInjection;
 
