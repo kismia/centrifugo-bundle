@@ -27,8 +27,10 @@ class Configuration implements ConfigurationInterface
                             ->end()
                         ->end()
                         ->arrayNode('http')
-                            ->canBeUnset()
-
+                            ->children()
+                                ->scalarNode(78)->end()
+                                ->scalarNode(13)->end()
+                            ->end()
                         ->end()
                     ->end()
                 ->end()

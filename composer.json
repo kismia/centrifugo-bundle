@@ -1,7 +1,7 @@
 {
   "name": "kismia/centrifugo-bundle",
   "type": "symfony-bundle",
-  "versions" : "1.0.1",
+  "versions" : "1.0.2",
   "description": "A Centrifugo bundle for Symfony",
   "keywords": ["centrifugo", "php", "symfony", "bundle"],
   "homepage": "https://github.com/kismia/centrifugo-bundle",
